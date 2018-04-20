@@ -35,7 +35,7 @@ class CampaignShow extends Component {
             {
                 header: manager,
                 meta:'Address of Manager',
-                description: 'The manager created this campaign and can create request to campaign',
+                description: 'The manager created this project and can create request to project',
                 style: { overflowWrap: 'break-word'}
             },
             {
@@ -67,7 +67,7 @@ class CampaignShow extends Component {
         return (
             <Layout>
                 <Divider />
-                <h3>Campaign Show</h3>
+                <h3>Project Show</h3>
                 <Grid>
                     <Grid.Row>
                         <Grid.Column width={10}>

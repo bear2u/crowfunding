@@ -15,13 +15,10 @@ class CampaignIndex extends Component {
     renderCampaigns() {
         const items = this.props.campaigns.map( address => {
             
-            
-            
             return {
-                header: address,
+                description: address,
                 image: '/static/elliot.jpg',
-                href:'/campaigns/'+address,
-                description: 'View Campaign',
+                href:'/campaigns/'+address,                
                 fluid: true,
             }
         });
@@ -35,7 +32,7 @@ class CampaignIndex extends Component {
             <Layout>
                 <Divider />
                 <div>                                        
-                    <h3>Open Campaign</h3>
+                    <h3>Project List</h3>
 
                     {this.renderCampaigns()}
                     

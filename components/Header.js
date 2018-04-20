@@ -6,8 +6,10 @@ export default () => {
     return (
         <Menu inverted  style={{ marginTop: '10px' }}>
             <Link route="/">
-                <a className="item">
+                <a>
+                <Label size='huge' color='black'>
                     <h1>BlockChaing CrowdFunding</h1>
+                </Label>
                 </a>    
             </Link>   
             <Menu.Menu position="right">
@@ -15,7 +17,7 @@ export default () => {
                 <Link route="/campaigns/new">
                 <a style={{color:'white'}}>
                     <Label size='huge' color='black'>
-                        New Project
+                        <h1>New Project</h1>
                     </Label>
                     </a>
 

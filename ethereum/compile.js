@@ -7,7 +7,7 @@ if(fs.existsSync(buildPath)){
   fs.removeSync(buildPath);
 }
 
-const campaignPath = path.resolve(__dirname, 'contracts', 'Campaign.sol');
+const campaignPath = path.resolve(__dirname, 'contracts', 'Project.sol');
 const source = fs.readFileSync(campaignPath, 'utf8');
 const output = solc.compile(source, 1).contracts;
 

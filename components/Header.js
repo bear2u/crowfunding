@@ -7,7 +7,7 @@ export default () => {
         <Menu inverted  style={{ marginTop: '10px' }}>
             <Link route="/">
                 <a className="item">
-                    CrowdCoin
+                    <h1>BlockChaing CrowdFunding</h1>
                 </a>    
             </Link>   
             <Menu.Menu position="right">

@@ -7,15 +7,16 @@ import { Link } from '../routes';
 
 class CampaignIndex extends Component {
     static async getInitialProps() {
+
+        console.dir(factory.methods.getDeployedCampaigns())
+
         const campaigns = await factory.methods.getDeployedCampaigns().call();
 
         return { campaigns };
     };
 
     renderCampaigns() {
-        const items = this.props.campaigns.map( address => {
-            
-            
+        const items = this.props.campaigns.map( (address, index) => {
             
             return {
                 header: address,
@@ -23,6 +24,8 @@ class CampaignIndex extends Component {
                 href:'/campaigns/'+address,
                 description: 'View Campaign',
                 fluid: true,
+                extra: true,
+                
             }
         });
 

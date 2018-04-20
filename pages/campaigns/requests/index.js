@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Table } from 'semantic-ui-react';
+import { Button, Table,Divider } from 'semantic-ui-react';
 import { Link } from '../../../routes';
 import Layout from '../../../components/Layout';
 import Campaign from '../../../ethereum/campaign';
@@ -40,6 +40,7 @@ class RequestIndex extends Component {
 
         return (
             <Layout>
+                <Divider />
                 <h3>
                     Requests
                 </h3>

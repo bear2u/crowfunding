@@ -14,16 +14,15 @@ class CampaignIndex extends Component {
 
     renderCampaigns() {
         const items = this.props.campaigns.map( address => {
+            
+            
+            
             return {
                 header: address,
                 image: '/static/elliot.jpg',
-            description: (
-                <Link route={`/campaigns/${address}`}>
-                    <a>View Campaign</a>
-                </Link>
-            ),
+                href:'/campaigns/'+address,
+                description: 'View Campaign',
                 fluid: true,
-
             }
         });
 

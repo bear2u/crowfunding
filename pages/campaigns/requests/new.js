@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Button, Message, Input } from 'semantic-ui-react';
+import { Form, Button, Message, Input,Divider } from 'semantic-ui-react';
 import Campaign from '../../../ethereum/campaign';
 import web3 from '../../../ethereum/web3';
 import { Link, Router } from '../../../routes';
@@ -48,6 +48,7 @@ class ReactNew extends Component {
     render() {
         return (
             <Layout>
+                <Divider />
                 <Link route={`/campaigns/${this.props.address}/requests`}>
                     <a>Back</a>    
                 </Link>

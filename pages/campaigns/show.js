@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Grid, Button } from 'semantic-ui-react';
+import { Card, Grid, Button,Divider } from 'semantic-ui-react';
 import Layout from '../../components/Layout'
 import Campaign from '../../ethereum/campaign'
 import web3 from '../../ethereum/web3'
@@ -66,6 +66,7 @@ class CampaignShow extends Component {
     render() {        
         return (
             <Layout>
+                <Divider />
                 <h3>Campaign Show</h3>
                 <Grid>
                     <Grid.Row>

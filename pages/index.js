@@ -16,7 +16,7 @@ class CampaignIndex extends Component {
         const items = this.props.campaigns.map( address => {
             
             return {
-                description: address,
+                description: address.substring(0,15) + "...",
                 image: '/static/elliot.jpg',
                 href:'/campaigns/'+address,                
                 fluid: true,
